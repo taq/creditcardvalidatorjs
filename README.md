@@ -11,17 +11,23 @@ the current date.
 
 Just using the number, just valid the number:
 
-   var validator = new Bluefish.CreditCardValidator("1234123412341234");
-   console.log(validator.valid());
+```javascript
+var validator = new Bluefish.CreditCardValidator("1234123412341234");
+console.log(validator.valid());
+```
 
 Using number, year and month:
 
-   var validator = new Bluefish.CreditCardValidator("1234123412341234",2012,11);
-   console.log(validator.validNumber());
-   console.log(validator.validDate());
-   console.log(validator.valid());
+```javascript
+var validator = new Bluefish.CreditCardValidator("1234123412341234",2012,11);
+console.log(validator.validNumber());
+console.log(validator.validDate());
+console.log(validator.valid());
+```
 
 Formatting number:
 
-   var validator = new Bluefish.CreditCardValidator("1234123412341234");
-   console.log(validator.formatNumber()) => "1234-1234-1234-1234"
+```javascript
+var validator = new Bluefish.CreditCardValidator("1234123412341234");
+console.log(validator.formatNumber()) => "1234-1234-1234-1234"
+```
